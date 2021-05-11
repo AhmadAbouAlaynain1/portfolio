@@ -16,6 +16,10 @@ body {
   margin: 0;
 }
 
+body * {
+  transition: 0.3s;
+}
+
 h1,
 h2,
 h3,
@@ -115,6 +119,10 @@ h6 {
   justify-content: space-between;
   align-items: center;
   background-color: var(--mainColor);
+}
+
+#navigation a {
+  color: var(--mainText);
 }
 
 #navigation {
@@ -294,10 +302,10 @@ h6 {
 }
 
 .post {
-  border: 1px solid var(--borderColor);
-  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  border: 0.1px solid var(--borderColor);
+  -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 }
 
 .thumbnail {

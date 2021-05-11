@@ -15,6 +15,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="default.css" />
+    <link id="theme-style" rel="stylesheet" href="" type="text/css" />
+
     <title>Ahmad Abou Alaynain</title>
   </head>
   <body>
@@ -44,10 +46,10 @@
               Personalize Theme
             </h5>
             <div id="theme-options-wrapper">
-              <div class="theme-dot" id="light-mode"></div>
-              <div class="theme-dot" id="blue-mode"></div>
-              <div class="theme-dot" id="green-mode"></div>
-              <div class="theme-dot" id="purple-mode"></div>
+              <div data-mode="light" class="theme-dot" id="light-mode"></div>
+              <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
+              <div data-mode="green" class="theme-dot" id="green-mode"></div>
+              <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
             </div>
             <p id="settings-note">
               Theme options will be saved for <br />
@@ -134,7 +136,7 @@
             <div class="post">
               <img class="thumbnail" src="images/Game.jpg" alt="Video Game" />
               <div class="post-preview">
-                <h6>Mario-Style Video Game</h6>
+                <h6 class="post-title">Mario-Style Video Game</h6>
                 <p class="post-intro">
                   Built with the Godot game engine, emulates the same feel as
                   most mario 2D games
@@ -147,7 +149,7 @@
             <div class="post">
               <img class="thumbnail" src="images/Scan.jpg" alt="OCR Scanner" />
               <div class="post-preview">
-                <h6>OCR</h6>
+                <h6 class="post-title">OCR</h6>
                 <p class="post-intro">
                   Built using python, scans a selected space on screen and
                   returns text
@@ -164,7 +166,7 @@
                 alt="Form Validation"
               />
               <div class="post-preview">
-                <h6>Form Validation</h6>
+                <h6 class="post-title">Form Validation</h6>
                 <p class="post-intro">
                   A simple JavaScript Script that allows you to add records if
                   conditions of form are satisfied
@@ -194,5 +196,6 @@
         </form>
       </div>
     </section>
+    <script src="main.js"></script>
   </body>
 </html>
