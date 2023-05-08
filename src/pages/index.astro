@@ -1,8 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Counter from "../components/Counter.tsx";
 ---
 
 <Layout title="Ahmad's Site">
-	<div class="bg-red-200">Hi</div>
+  <div class="bg-red-200">Hi</div>
+  <Counter client:load />
 </Layout>
-
